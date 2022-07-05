@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     @media all and (min-width:721px) and (max-width:1400px){
+        .header{
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header>h1{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 0px;
+        }
+        .header>p{
+            
+            color: gray;
+            line-height:25px;
+        }
+        #box{
+            width: 70%;
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap:20px
+
+        }
+        #box>div{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       padding: 0px 25px 15px 25px;
+       text-align: center;
+       border-radius: 10px;
+        }
+       div:nth-child(1)> h2+h1{
+        color: green;
+        }
+        div:nth-child(2)> h2+h1{
+        color:orange;
+        }
+        div:nth-child(3)> h2+h1{
+        color: blue;
+        }
+        #box>div>h1{
+            margin-top:-5px;
+            margin-bottom: -8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box>div>h1+p{
+            font-style: italic;
+            color: grey;
+            font-size: 20px;
+        }
+        p+p{
+            color: grey;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        button{
+            width: 150px;
+            padding: 10px;
+            border:1px solid blue;
+            color: blue;
+            font-weight: bold;
+            background-color:white;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+        }
+     }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <h1>
+        Choose a plan that right for your business
+    </h1>
+    <p>We collect reviews from our users so you can get an honest opinion
+        of what an experience with our website.
+    </p>
+</div>
+<div id="box">
+    <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion
+            of what an experience with our website.
+        </p>
+        <button>Start Now</button>
+    </div>
+    <div>
+        <h2>Business Plan</h2>
+        <h1>$39.00</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion
+            of what an experience with our website.
+        </p>
+        <button>Start Now</button>
+    </div>
+    <div>
+        <h2>Premium Plan</h2>
+        <h1>$59.00</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion
+            of what an experience with our website.
+        </p>
+        <button>Start Now</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        background-color:black;
+    }  
+    @media all and (min-width:721px) and (max-width:1400px){
+    body{
+        background-color: white;
+        margin: auto;
+        padding: 30px 10px;
+        margin-top: 100px;
+        width: 90%;
+        
+    }
+#nav{
+    background-color: yellow;
+    font-size: 34px;
+    font-weight: 500;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+#body{
+    display: grid;
+    width: 93.2%;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 240px;
+    background-color: white;
+    margin-top: 30px;
+gap: 30px;
+}
+
+#body>div{
+    padding: 20px;
+    
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#body>div:nth-child(1){
+    background-color: red;
+}
+#body>div:nth-child(2){
+    background-color:green;
+}
+#body>div:nth-child(3){
+    background-color:blue;
+}
+#body>div:nth-child(4){
+    background-color: grey;
+}
+    }
+
+
+@media all and (min-width:480px) and (max-width:720px)
+{
+    body{
+        background-color: white;
+        margin: auto;
+        padding: 30px 10px;
+        margin-top: 10px;
+        width: 90%;
+        
+    }
+#nav{
+    background-color: yellow;
+    font-size: 34px;
+    font-weight: 500;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+#body{
+    display: grid;
+    width: 93.2%;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,200px);
+    background-color: white;
+    margin-top: 20px;
+gap: 30px;
+grid-template-areas: 
+"blu rd"
+"grn gry"
+}
+
+#body>div{
+    padding: 20px;
+    
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#body>div:nth-child(1){
+    background-color: red;
+    grid-area: "rd";
+}
+#body>div:nth-child(2){
+    background-color:green;
+    grid-area: "grn";
+}
+#body>div:nth-child(3){
+    background-color:blue;
+    grid-area: "blu";
+}
+#body>div:nth-child(4){
+    background-color: grey;
+    grid-area: "gry";
+}
+}
+
+
+
+@media all and (min-width:0px) and (max-width:479px)
+{
+    body{
+        background-color: white;
+        margin: auto;
+        padding: 30px 10px;
+        width: 90%;
+        
+    }
+#nav{
+    background-color: yellow;
+    font-size: 34px;
+    font-weight: 500;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+#body{
+    display: grid;
+    width: 93.2%;
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,120px);
+    background-color: white;
+    margin-top: 30px;
+gap: 20px;
+}
+
+#body>div{
+    padding: 20px;
+    
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#body>div:nth-child(1){
+    background-color: red;
+}
+#body>div:nth-child(2){
+    background-color:green;
+}
+#body>div:nth-child(3){
+    background-color:blue;
+}
+#body>div:nth-child(4){
+    background-color: grey;
+}
+}
+    </style>
+</head>
+<body>
+    
+        <div id="nav">Navigation
+            </div>
+        <div id="body">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+      
+        h1{
+            color: teal;
+            font-size: 40px;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+        #calculator{
+            padding: 3%;
+            width: 20%;
+            margin: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        #calculator>div:first-child{
+            width: 96%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            height: 50px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            
+        }
+        #calculator>.line{
+            display: flex;
+            width: 96%;
+            margin-bottom: 3%;
+            
+        }
+        #calculator>.line>div{
+            font-size: 24px;
+            width: 10%;
+            height: auto;
+            padding: 6%;
+            border-radius: 10px;
+            text-align: center;
+            color: black;
+            margin: auto;
+            font-weight: bold;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            
+        }
+        #calculator>.line>div:nth-child(4){
+            background-color: black;
+            color: white;
+        }
+        #calculator>div:nth-child(5)>div:nth-child(3){
+            background-color: black;
+            color: white;
+        }
+        #calculator>div:nth-child(5)>div:nth-child(1){
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    
+    
+        <h1>Masai Calculator</h1>
+        <div id="calculator">
+        <div></div>
+        <div class="line">
+            <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        </div>
+       <div class="line">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+       </div>
+        <div class="line">
+            <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>X</div>
+        </div>
+        <div class="line">
+            <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+        </div>
+    </div>
+</div>
+</html>

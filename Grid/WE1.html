@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 25%;
+            margin: auto;
+            font-size: 40px;
+            color:rgb(10, 199, 224);
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+        }
+        #container{
+           width: 30%;
+           padding: 25px;
+           margin:auto;
+           border: 1px solid green;
+           
+        }
+        .main{
+            display: grid;
+            border: 1px solid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: repeat(4,50px);
+            gap:15px
+
+
+        }
+        .main>div{
+            padding: 10px;
+            border: 1px solid pink;
+            text-align: center;
+        }
+        #container>div:first-child{
+            display: block;
+            width: 100%;
+            margin: auto;
+            border: 1px solid red;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="container">
+        <div class="search"></div>
+        <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>X</div>
+        <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+    </div>
+</div>
+</body>
+</html>
