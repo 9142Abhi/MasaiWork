@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            width: 100%;
+            margin: auto;
+        }
+        input{
+            
+            width: 260px;
+            height: 40px;
+            margin-top: 50px;
+            font-size: 24px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        button{
+            text-align: center;
+            font-size: 28px;
+            padding: 10px;
+            font-weight: bold;
+            margin: auto;
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+        h1{
+            color:red;
+            margin-left: 30px;
+            margin-top: 30px;
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="Number" id="first" placeholder="enter 1st number">
+    <input type="number" id="second" placeholder="enter 2nd number">
+    <br>
+    <button onClick="addnumber()" id="add">Add</button>
+    <button onClick="subnumber()" id="sub">Subtract</button>
+    <button onClick="mulnumber()" id="mul">Multiply</button>
+    <button onClick="divnumber()" id="div">Divide</button>
+    <h1 id="result"></h1>
+</body>
+</html>
+<script>
+   
+    
+function addnumber(){
+    let inputnum1= document.getElementById("first").value;
+    let inputnum2= document.getElementById("second").value;
+    let sum;
+    sum= Number(inputnum1)+ Number(inputnum2);
+    document.getElementById("result").innerText=sum
+}
+function subnumber(){
+    let inputnum1= document.getElementById("first").value;
+    let inputnum2= document.getElementById("second").value;
+    let sub;
+    sum= Number(inputnum1) - Number(inputnum2);
+    document.getElementById("result").innerText=sum
+}
+function mulnumber(){
+    let inputnum1= document.getElementById("first").value;
+    let inputnum2= document.getElementById("second").value;
+    let mul;
+    sum= Number(inputnum1) * Number(inputnum2);
+    document.getElementById("result").innerText=sum
+}
+function divnumber(){
+    let inputnum1= document.getElementById("first").value;
+    let inputnum2= document.getElementById("second").value;
+    let div;
+    sum= Number(inputnum1) / Number(inputnum2);
+    document.getElementById("result").innerText=sum
+}
+
+</script>

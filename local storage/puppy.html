@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppy Page</title>
+    <style>
+        div{
+            width: 50%;
+            margin: auto;
+
+        }
+        button{
+            padding:5px 10px;
+            margin:5px 5%;
+            font-size: 20px;
+            background-color: teal;
+            border-radius: 5px;
+                color: white;
+             }
+             img{
+              display: block;  
+             }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://www.bing.com/th?id=OIP.ez64pUNihhf5d7vgHgdn8wHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+        alt="error"
+      />
+      <button id="likeBtn">Like</button>
+      <button id="dislikeBtn">Dislike</button>
+      <p>Like:- <span id="likeOut"> </span></p>
+      <p>Dislike:- <span id="dislikeOut"></span></p>
+    </div>
+  </body>
+</html>
+<script>
+  let likeCount;
+  if(localStorage.getItem("puppyLike")==null){
+    likeCount=0;
+  }else{
+    likeCount=localStorage.getItem("puppyLike");
+  }
+  let dislikeCount;
+  if(localStorage.getItem("puppyDislike")==null){
+    dislikeCount=0;
+  }else{
+    dislikeCount=localStorage.getItem("puppyDislike");
+  }
+  document.querySelector("#likeOut").innerText=likeCount;
+  document.querySelector("#dislikeOut").innerText=dislikeCount;
+  
+document.querySelector('div>button').addEventListener("click",likefun);
+function likefun(){
+  likeCount++;
+  document.querySelector("#likeOut").innerText=likeCount;
+  localStorage.setItem("puppyLike",likeCount);
+}
+document.querySelector('button+button').addEventListener("click",dislikefun);
+function dislikefun(){
+  dislikeCount++;
+  document.querySelector("#dislikeOut").innerText=dislikeCount;
+  localStorage.setItem("puppyDislike",dislikeCount);
+}
+
+
+</script>
