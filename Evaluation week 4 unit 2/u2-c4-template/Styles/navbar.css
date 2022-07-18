@@ -1,0 +1,27 @@
+/* Write necessery css for navbar here  */
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#navbar>div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+#navbar>h2{
+margin: auto;
+text-align: center;
+display: block;
+}
+
+#filter{
+    margin: auto;
+    margin-left: 40%;
+    border: 1px solid;
+    width: 200px;
+    padding: 2px 5px;
+    height: 40px;
+    font-size: 26px;
+    margin-top: 15px;
+}

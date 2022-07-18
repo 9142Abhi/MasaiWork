@@ -1,0 +1,26 @@
+/* Write all the code related to the table here  */
+body{
+    margin: 0px;
+    padding:0px;
+
+}
+
+
+#filter+h1{
+    text-align: center;
+}
+table{
+    margin: auto;
+    
+    
+}
+table>thead>tr>th,
+table>tbody>tr>td{
+padding: 1px 20px;
+border-collapse: collapse;
+
+
+}
+table>thead>tr>th{
+    background-color: rgb(238, 206, 23);
+}
